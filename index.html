@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>Login And Registration From SULIMAN</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        
+    </head>
+    <body>
+        <div class="suliman1">
+            <div class="suliman2">
+            <div class="Bpox">
+                <div id="butt" ></div>
+                <button type="button" class="btn" onclick="login()" >Login</button>
+                <button type="button" class="btn" onclick="register()">Registar</button>
+            <!-- For Image -->
+            </div>
+                
+
+
+
+<div class="social">
+                <a href="https://twitter.com/Q2iiiv" target="_blank" alt="Q2iiiv" title="Twitter:Q2iiiv" ><img src="img/twitter.png" ></a>
+                 <a href="https://www.linkedin.com/in/suliman-al-quwifle-6833b316b/" target="_blank" alt="suliman Al-quwifle" title="Linkedin:suliman Al-Quwifle" ><img src="img/linkedin.png" ></a>
+                <a href="https://www.instagram.com/sulimanmq" target="_blank" alt="sulimanmq" title="instagram:sulimanmq"><img src="img/instagram.png"></a>
+                <a href="https://www.snapchat.com/add/sulimanmq" target="_blank" alt="sulimanmq" title="snapchat:sulimanmq"><img src="img/snapchat.png"></a>
+            </div>
+                
+
+
+
+
+
+<!-- for the button and check box and text -->
+                <form id="login" class="input-group">
+			
+                    <input type="text" class="input-field" placeholder="User Name" required>
+                   
+
+		
+		<input type="password" class="input-field" placeholder="Password" required id="myinput">
+		<span class="eye" onclick="myfunction()">
+			<i id="hide"	class="far fa-eye"></i>
+			<i  id="hide1"   class="far fa-eye-slash"></i>
+		</span>
+
+
+                    <input type="checkbox"class="check-box"><span>Remember Password</span>
+                    <button type="submit"class="submit-btn" >Log In</button>
+                </form>
+       
+
+         <form id="register" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Name" required>
+                    <input type="email" class="input-field" placeholder="Email" required>
+                 
+
+   <input type="password" class="input-field" placeholder="Password" required >
+
+			
+                    
+<input type="checkbox"class="check-box"><span>I agree to the terms & conditions</span>
+                    <button type="submit"class="submit-btn" > Register</button>
+                </form>
+         
+
+   </div>  
+        </div>
+     
+
+
+
+
+   <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("butt");
+            
+            function register(){
+                x.style.left="-400px";
+                y.style.left="50px";
+                z.style.left="110px"; 
+            }
+            function login(){
+                x.style.left="50px";
+                y.style.left="450px";
+                z.style.left="0"; 
+            }
+        </script>
+
+   <script>
+	function myfunction(){
+	     var a = document.getElementById("myinput");
+            var b = document.getElementById("hide");
+            var c= document.getElementById("hide1");
+		if(a.type==='password'){
+
+		a.type="text";
+		b.style.display="block";
+		c.style.display="none";
+}
+else{
+		a.type="password";
+		b.style.display="none";
+		c.style.display="block";
+
+}}
+
+        </script>
+
+
+        </script>
+
+    </body>
+    
+</html>
+
